@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<display-name>CollegeMS</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>LoginServlet</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/com.College.controller.LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>MangerRegister</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.MangerRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MangerRegister</servlet-name>
+		<url-pattern>/com.College.controller.MangerRegister</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowClass</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowClass</servlet-name>
+		<url-pattern>/com.College.controller.ShowClass</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>EditClassport</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.EditClassport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditClassport</servlet-name>
+		<url-pattern>/com.College.controller.EditClassport</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>DeletClass</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.DeletClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeletClass</servlet-name>
+		<url-pattern>/com.College.controller.DeletClass</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UpdateClass</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.UpdateClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateClass</servlet-name>
+		<url-pattern>/com.College.controller.UpdateClass</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowStudent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowStudent</servlet-name>
+		<url-pattern>/com.College.controller.ShowStudent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>DeleteStudent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.DeleteStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteStudent</servlet-name>
+		<url-pattern>/com.College.controller.DeleteStudent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowRoom</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowRoom</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowRoom</servlet-name>
+		<url-pattern>/com.College.controller.ShowRoom</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowTalent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowTalent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowTalent</servlet-name>
+		<url-pattern>/com.College.controller.ShowTalent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>StudentLogin</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.StudentLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentLogin</servlet-name>
+		<url-pattern>/com.College.controller.StudentLogin</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowMoney</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowMoney</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowMoney</servlet-name>
+		<url-pattern>/com.College.controller.ShowMoney</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowNewStudent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowNewStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowNewStudent</servlet-name>
+		<url-pattern>/com.College.controller.ShowNewStudent</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>SearchNewStudent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.search.SearchNewStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchNewStudent</servlet-name>
+		<url-pattern>/com.College.search.SearchNewStudent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowAnnoucent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowAnnoucent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowAnnoucent</servlet-name>
+		<url-pattern>/com.College.controller.ShowAnnoucent</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>AdmitNewStudent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.process.AdmitNewStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdmitNewStudent</servlet-name>
+		<url-pattern>/com.College.process.AdmitNewStudent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>StudentEditPhone</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.process.StudentEditPhone</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentEditPhone</servlet-name>
+		<url-pattern>/com.College.process.StudentEditPhone</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>StudentEditPsd</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.process.StudentEditPsd</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentEditPsd</servlet-name>
+		<url-pattern>/com.College.process.StudentEditPsd</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>AddClass</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.AddClass</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddClass</servlet-name>
+		<url-pattern>/com.College.controller.AddClass</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>EditStudentport</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.EditStudentport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditStudentport</servlet-name>
+		<url-pattern>/com.College.controller.EditStudentport</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>JumpRegister</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.buy.JumpRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JumpRegister</servlet-name>
+		<url-pattern>/com.College.buy.JumpRegister</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>BuyRegister</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.buy.BuyRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyRegister</servlet-name>
+		<url-pattern>/com.College.buy.BuyRegister</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowWorking</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowWorking</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowWorking</servlet-name>
+		<url-pattern>/com.College.controller.ShowWorking</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>DeleteWorking</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.DeleteWorking</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteWorking</servlet-name>
+		<url-pattern>/com.College.controller.DeleteWorking</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>EditWorkingport</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.EditWorkingport</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditWorkingport</servlet-name>
+		<url-pattern>/com.College.controller.EditWorkingport</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UpdateWorking</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.UpdateWorking</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateWorking</servlet-name>
+		<url-pattern>/com.College.controller.UpdateWorking</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowBook</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowBook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowBook</servlet-name>
+		<url-pattern>/com.College.controller.ShowBook</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>DeleteBook</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.DeleteBook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteBook</servlet-name>
+		<url-pattern>/com.College.controller.DeleteBook</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UpdateNotice</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.UpdateNotice</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateNotice</servlet-name>
+		<url-pattern>/com.College.controller.UpdateNotice</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>AddWorking</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.AddWorking</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddWorking</servlet-name>
+		<url-pattern>/com.College.controller.AddWorking</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>AddBook</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.AddBook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddBook</servlet-name>
+		<url-pattern>/com.College.controller.AddBook</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>StudentLeaving</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.process.StudentLeaving</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentLeaving</servlet-name>
+		<url-pattern>/com.College.process.StudentLeaving</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowFriend</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowFriend</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowFriend</servlet-name>
+		<url-pattern>/com.College.controller.ShowFriend</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>SearchStudent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.search.SearchStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchStudent</servlet-name>
+		<url-pattern>/com.College.search.SearchStudent</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>SearchBook</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.search.SearchBook</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchBook</servlet-name>
+		<url-pattern>/com.College.search.SearchBook</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>JumpExam</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.buy.JumpExam</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JumpExam</servlet-name>
+		<url-pattern>/com.College.buy.JumpExam</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowReward</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowReward</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowReward</servlet-name>
+		<url-pattern>/com.College.controller.ShowReward</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>BuyMaexam</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.buy.BuyMaexam</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyMaexam</servlet-name>
+		<url-pattern>/com.College.buy.BuyMaexam</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>BuyEnexam</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.buy.BuyEnexam</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyEnexam</servlet-name>
+		<url-pattern>/com.College.buy.BuyEnexam</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowStudentRoom</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowStudentRoom</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowStudentRoom</servlet-name>
+		<url-pattern>/com.College.controller.ShowStudentRoom</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>AddReward</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.AddReward</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddReward</servlet-name>
+		<url-pattern>/com.College.controller.AddReward</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowLeavStudent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowLeavStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowLeavStudent</servlet-name>
+		<url-pattern>/com.College.controller.ShowLeavStudent</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>AdmitFriend</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.process.AdmitFriend</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AdmitFriend</servlet-name>
+		<url-pattern>/com.College.process.AdmitFriend</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UpdatePassWords</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.process.UpdatePassWords</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePassWords</servlet-name>
+		<url-pattern>/com.College.process.UpdatePassWords</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UpdatePhone</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.process.UpdatePhone</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePhone</servlet-name>
+		<url-pattern>/com.College.process.UpdatePhone</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowScore</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowScore</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowScore</servlet-name>
+		<url-pattern>/com.College.controller.ShowScore</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>DeleteRoom</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.DeleteRoom</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteRoom</servlet-name>
+		<url-pattern>/com.College.controller.DeleteRoom</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UpdateStudent</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.UpdateStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateStudent</servlet-name>
+		<url-pattern>/com.College.controller.UpdateStudent</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>DeleteFriend</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.DeleteFriend</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteFriend</servlet-name>
+		<url-pattern>/com.College.controller.DeleteFriend</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>EditMoney</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.EditMoney</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditMoney</servlet-name>
+		<url-pattern>/com.College.controller.EditMoney</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UpdateMoney</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.UpdateMoney</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateMoney</servlet-name>
+		<url-pattern>/com.College.controller.UpdateMoney</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UpMoney</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.process.UpMoney</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpMoney</servlet-name>
+		<url-pattern>/com.College.process.UpMoney</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UpCard</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.process.UpCard</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpCard</servlet-name>
+		<url-pattern>/com.College.process.UpCard</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>ShowNews</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.controller.ShowNews</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowNews</servlet-name>
+		<url-pattern>/com.College.controller.ShowNews</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>FileUploadServlet</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.file.FileUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<url-pattern>/com.College.file.FileUploadServlet</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<!-- 这个servlet名必须和映射的一致 -->
+		<servlet-name>UploadServlet</servlet-name>
+		<!-- 这是在浏览器中输入的访问该servlet的url -->
+		<servlet-class>com.College.file.UploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/com.College.file.UploadServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
